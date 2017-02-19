@@ -8,10 +8,14 @@
   <br />
     <div class="row">
       <div class="col-xs-6 col-md-3" id="splurty">
+        <figure class="effect-sadie">
         <%= image_tag 'splurty.png', class: 'img-responsive' %>
-        <div class="portfolio-caption">
-          ...
-        </div>   
+          <figcaption>
+            <!--div class="portfolio-caption">
+              Zen Quotes Generator
+            </div-->
+          </figcaption> 
+        </figure> 
       </div>
 
       <div class="col-xs-6 col-md-3" id="nomster">
@@ -66,6 +70,7 @@
 <!-- -->
 
 <script>
+  //scroll
   $('body').scrollspy({target: 'projects-scroll'})
   $('body').scrollspy({target: 'social-scroll'})
   $('body').scrollspy({target: 'navbar-scroll'})
