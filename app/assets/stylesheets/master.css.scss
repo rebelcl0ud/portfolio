@@ -32,8 +32,14 @@ h3, h4 {
   text-align: center;
 }
 
-#splurty, #nomster, #flixter, #chess {
+/*#splurty, #nomster, #flixter, #chess {
   box-shadow: 0px 0px 1px #2a2a2a;
+  transition: background-color 0.5s ease;
+}*/
+
+#splurty:hover, #nomster:hover, #flixter:hover, #chess:hover {
+  background: rgba(0, 0, 0, 0.7); /*doesnt give me overlay*/
+  cursor: pointer;
 }
 
 .social, .contact {
@@ -55,3 +61,9 @@ h5 {
 h5 a {
   color: black;
 }
+
+
+
+
+
+
