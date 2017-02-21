@@ -1,14 +1,48 @@
+<!-- HERO PIC / TOP SECTION -->
 <div class="hero">
   <!--h1>HEBWO</h1-->
 </div>
 
+<!-- TESTING => trying to get a popup w/image such as with form inside modal -->
 
+<!-- trigger modal -->
+   <!--div class="col-xs-6 col-md-3" id="splurty">
+        <figure class="effect-honey" data-toggle="modal" data-target="#myModal">
+        <%= image_tag 'splurty.png', class: 'img-responsive' %>
+          <figcaption>
+            <h2>
+              <span>Zen</span>
+              <small>| Quotes Generator</small>
+            </h2>
+          </figcaption> 
+        </figure> 
+      </div-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <!--where pic would go inside modal -->
+         <%= image_tag 'splurty.png', class: 'img-responsive' %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- TESTING ENDS HERE -->
+<!-- above works using splurty thumbnail as example, need to cycle through images [DRY]-->
+
+<!-- PROJECTS SECTION THUMBNAILS-->
 <div class="projects" id="projects-scroll">
   <h3>Projects</h3>
   <br />
     <div class="row">
       <div class="col-xs-6 col-md-3" id="splurty">
-        <figure class="effect-honey">
+        <figure class="effect-honey" data-toggle="modal" data-target="#myModal">
         <%= image_tag 'splurty.png', class: 'img-responsive' %>
           <figcaption>
             <h2>
@@ -61,6 +95,7 @@
 
 <br class="clr" /> <!--makes certain social starts fresh -->
 
+<!-- SOCIAL SECTION -->
 <div class="social" id="social-scroll">
   <!--h3>Recon</h3-->
   <div class="col-md-3 col-md-offset-5">
@@ -71,12 +106,14 @@
 
 </div>
 
+<!-- CONTACTS SECTION -->
 <div class="contact" id="contact-scroll">
   <div class="col-md-12">
     <!--h4>jovanka.placeres@gmail.com</h4-->
   </div>
 </div>
 
+<!-- BACK TO TOP -->
 <div class="extra">
   <div class="col-md-12">
     <h5><a href="#navbar-scroll">back to top^</a></h5>
@@ -90,6 +127,10 @@
   $('body').scrollspy({target: 'projects-scroll'})
   $('body').scrollspy({target: 'social-scroll'})
   $('body').scrollspy({target: 'navbar-scroll'})
+
+  //connects thumbnail to click
+  // var splurty = document.getElementById('splurty');
+  //   console.log(splurty);
 
 </script>
 
