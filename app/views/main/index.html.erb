@@ -38,8 +38,8 @@
 
 <!-- PROJECTS SECTION THUMBNAILS-->
 <div class="projects" id="projects-scroll">
-  <h3>Projects</h3>
-  <br />
+  <h3><div class= "vertical-line"/>Projects</h3>
+  <br /><br />
     <div class="row">
       <div class="col-xs-6 col-md-3" id="splurty">
         <figure class="effect-honey" data-toggle="modal" data-target="#myModal">
@@ -95,21 +95,49 @@
 
 <br class="clr" /> <!--makes certain social starts fresh -->
 
+
 <!-- SOCIAL SECTION -->
 <div class="social" id="social-scroll">
-  <!--h3>Recon</h3-->
+  <hr />
+  <h3>Find me on...</h3>
+  <br /><br />
   <div class="col-md-3 col-md-offset-5">
     <a href="https://github.com/rebelcl0ud/"><%= image_tag 'github.png', class: 'social-button' %></a>
     <a href="https://www.linkedin.com/in/jovankaplaceres"><%= image_tag 'linkedin.png', class: 'social-button' %></a> 
     <a href="https://twitter.com/mysticalstate"><%= image_tag 'twitter.png', class: 'social-button' %></a>
   </div>
-
 </div>
+<br />
+<hr />
 
-<!-- CONTACTS SECTION -->
+<br class="clr" /> <!--makes certain contacts starts fresh -->
+
+<!-- CONTACTS SECTION --> 
+<!-- FORM has no functionality yet-->
+
 <div class="contact" id="contact-scroll">
-  <div class="col-md-12">
-    <!--h4>jovanka.placeres@gmail.com</h4-->
+    <h3>Or... drop me a line</h3>
+    <br /><br />
+    <div class="boom-box col-md-6 col-md-offset-3">
+    <div class="col-md-10 col-md-offset-1">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputName">Name</label>
+          <input type="name" class="form-control" id="exampleInputName" placeholder="Peter Parker">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="pparker@dailybugle.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputMessage">Message</label>
+          <input type="message" class="form-control" id="exampleInputMessage" placeholder="Spidey pics coming your way!">
+        </div>
+        <br />
+        <button type="submit" class="btn btn-info">SEND!</button>
+        <br />
+      </form>
+    </div>
   </div>
 </div>
 
