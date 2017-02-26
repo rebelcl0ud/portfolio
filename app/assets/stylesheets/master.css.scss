@@ -2,6 +2,10 @@
 @import "bootstrap";
 /* above moved from app file -- .navbar border radius was not working until this edit*/
 
+@-ms-viewport{
+  width: device-width;
+}
+
 .navbar {
   border-radius: 0px;
 }
@@ -16,20 +20,44 @@
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin:0;
+}
+
 .navbar, .navbar-brand {
   font-family: 'Advent Pro', sans-serif;
   font-size: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar {
-  margin:0;
+#joIcon {
+  -webkit-filter: invert(100%);
+  width: 50px;
+  height: 50px;
 }
+
 
 .projects {
   padding: 75px 25px 25px 25px;
 }
 
-h3, h4 {
+.frosty { 
+  font-family: 'Source Code Pro', monospace;
+  text-shadow: rgba(0,0,0,0.95) 2px 2px;
+  color: white;
+  margin-top: 75px;
+  padding-right: 115px;
+}
+
+.frosty h4 {
+  text-decoration: none;
+  display: inline-block;
+}
+
+#soda {
+  -webkit-filter: invert(100%);
+}
+
+h3, h4, small {
   text-align: center;
   font-family: 'Source Code Pro', monospace;
 }

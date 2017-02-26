@@ -1,6 +1,9 @@
 <!-- HERO PIC / TOP SECTION -->
 <div class="hero">
-  <!--h1>HEBWO</h1-->
+  <div class="frosty col-xs-12 text-right">
+    <h1>Web Development</h1>
+    <h4 id="subheader">fueled by <%= image_tag 'soda.png', class: 'social-button', id: 'soda' %></h4>
+  </div>
 </div>
 
 <!-- TESTING => trying to get a popup w/image such as with form inside modal -->
@@ -19,7 +22,7 @@
       </div-->
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!--div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -29,10 +32,10 @@
       <div class="modal-body">
           <!--where pic would go inside modal --> 
         
-      </div>
+      <!--/div>
     </div>
   </div>
-</div>
+</div-->
 <!-- TESTING ENDS HERE -->
 <!-- above works using splurty thumbnail as example, need to cycle through images [DRY]-->
 
@@ -44,11 +47,11 @@
       <!-- SPLURTY THUMBNAIL-->
       <div class="col-xs-6 col-md-3" id="splurty">
         <figure class="effect-honey" data-toggle="modal" data-target="#myModal">
-        <%= image_tag 'splurty.png', class: 'img-responsive' %>
+         <a href="https://splurty-jo.herokuapp.com"><%= image_tag 'splurty.png', class: 'img-responsive' %></a>
           <figcaption>
             <h2>
-              <span>Zen</span>
-              <small>| Quotes Generator</small>
+              <!--span>Zen</span-->
+              <small>click to add quote</small>
             </h2>
           </figcaption> 
         </figure> 
@@ -56,11 +59,11 @@
       <!-- NOMSTER THUMBNAIL-->
       <div class="col-xs-6 col-md-3" id="nomster">
          <figure class="effect-honey">
-         <%= image_tag 'nomster.png', class: 'img-responsive' %>
+          <a href="https://nomster-jo.herokuapp.com"><%= image_tag 'nomster.png', class: 'img-responsive' %></a>
           <figcaption>
             <h2>
               <!--span>NOMster</span-->
-              <small>NOMster | Miami</small>
+              <small>click for Miami NOMs</small>
             </h2>
           </figcaption> 
         </figure>  
@@ -69,11 +72,11 @@
       <!-- FLIXTER THUMBNAIL-->
       <div class="col-xs-6 col-md-3" id="flixter">
          <figure class="effect-honey">
-         <%= image_tag 'flixter.png', class: 'img-responsive' %>
+         <a href="https://flixter-jo.herokuapp.com"><%= image_tag 'flixter.png', class: 'img-responsive' %></a>
           <figcaption>
             <h2>
               <!--span>FLIXter</span-->
-              <small>FLIXter</small>
+              <small>click if Dragon Age-er</small>
             </h2>
           </figcaption> 
         </figure>  
@@ -82,11 +85,11 @@
       <!-- CHESS THUMBNAIL-->
       <div class="col-xs-6 col-md-3" id="chess">
          <figure class="effect-honey">
-         <%= image_tag 'knights-chess.png', class: 'img-responsive' %>
+         <a href="https://knights-chess.herokuapp.com"><%= image_tag 'knights-chess.png', class: 'img-responsive' %></a>
           <figcaption>
             <h2>
               <!--span>Chess</span-->
-              <small>Chess Game</small>
+              <small>click to play chess</small>
             </h2>
           </figcaption> 
         </figure>   
@@ -109,9 +112,9 @@
   <h3><div class= "hashtag">#</div> contact</h3>
   <br /><br />
   <div class="col-md-3 col-md-offset-5">
-    <a href="https://github.com/rebelcl0ud/"><%= image_tag 'github.png', class: 'social-button' %></a>
     <a href="https://www.linkedin.com/in/jovankaplaceres"><%= image_tag 'linkedin.png', class: 'social-button' %></a> 
     <a href="https://twitter.com/mysticalstate"><%= image_tag 'twitter.png', class: 'social-button' %></a>
+    <a href="https://github.com/rebelcl0ud/"><%= image_tag 'github.png', class: 'social-button' %></a>
   </div>
 </div>
 <br />
