@@ -27,8 +27,8 @@
         </button>
       </div>
       <div class="modal-body">
-          <!--where pic would go inside modal -->
-         <%= image_tag 'splurty.png', class: 'img-responsive' %>
+          <!--where pic would go inside modal --> 
+        
       </div>
     </div>
   </div>
@@ -38,9 +38,10 @@
 
 <!-- PROJECTS SECTION THUMBNAILS-->
 <div class="projects" id="projects-scroll">
-  <h3><div class= "vertical-line"/>Projects</h3>
+  <h3><div class= "hashtag">#</div> projects</h3>
   <br /><br />
     <div class="row">
+      <!-- SPLURTY THUMBNAIL-->
       <div class="col-xs-6 col-md-3" id="splurty">
         <figure class="effect-honey" data-toggle="modal" data-target="#myModal">
         <%= image_tag 'splurty.png', class: 'img-responsive' %>
@@ -52,7 +53,7 @@
           </figcaption> 
         </figure> 
       </div>
-
+      <!-- NOMSTER THUMBNAIL-->
       <div class="col-xs-6 col-md-3" id="nomster">
          <figure class="effect-honey">
          <%= image_tag 'nomster.png', class: 'img-responsive' %>
@@ -65,7 +66,7 @@
         </figure>  
       </div>
       
-
+      <!-- FLIXTER THUMBNAIL-->
       <div class="col-xs-6 col-md-3" id="flixter">
          <figure class="effect-honey">
          <%= image_tag 'flixter.png', class: 'img-responsive' %>
@@ -78,6 +79,7 @@
         </figure>  
       </div>
 
+      <!-- CHESS THUMBNAIL-->
       <div class="col-xs-6 col-md-3" id="chess">
          <figure class="effect-honey">
          <%= image_tag 'knights-chess.png', class: 'img-responsive' %>
@@ -93,13 +95,18 @@
     </div>
 </div>
 
+<!-- ABOUT SECTION can go here -->
+
 <br class="clr" /> <!--makes certain social starts fresh -->
 
 
-<!-- SOCIAL SECTION -->
-<div class="social" id="social-scroll">
+<!-- CONTACT/SOCIAL MEDIA SECTION -->
+<!-- use this section until you decide whether you want to add the contact form or not officially -->
+<!-- some ppl hate the email icon opening their mail app, some hate contact boxes lol -->
+
+<div class="contact" id="contact-scroll">
   <hr />
-  <h3>Find me on...</h3>
+  <h3><div class= "hashtag">#</div> contact</h3>
   <br /><br />
   <div class="col-md-3 col-md-offset-5">
     <a href="https://github.com/rebelcl0ud/"><%= image_tag 'github.png', class: 'social-button' %></a>
@@ -115,7 +122,7 @@
 <!-- CONTACTS SECTION --> 
 <!-- FORM has no functionality yet-->
 
-<div class="contact" id="contact-scroll">
+<!--div class="contact" id="contact-scroll">
     <h3>Or... drop me a line</h3>
     <br /><br />
     <div class="boom-box col-md-6 col-md-offset-3">
@@ -139,7 +146,7 @@
       </form>
     </div>
   </div>
-</div>
+</div-->
 
 <!-- BACK TO TOP -->
 <div class="extra">
@@ -155,10 +162,6 @@
   $('body').scrollspy({target: 'projects-scroll'})
   $('body').scrollspy({target: 'social-scroll'})
   $('body').scrollspy({target: 'navbar-scroll'})
-
-  //connects thumbnail to click
-  // var splurty = document.getElementById('splurty');
-  //   console.log(splurty);
 
 </script>
 
