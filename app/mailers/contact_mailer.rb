@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-  #default from: 'no-reply@whateverhere.com'
+  default from: 'no-reply@jo.herokuapp.com'
 
   def contact_email(contact)
     @contact = contact
