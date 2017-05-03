@@ -3,9 +3,14 @@ class ContactMailer < ApplicationMailer
 
   def contact_email(contact)
     @contact = contact
-    mail(to: "rebelcl0udmedia@gmail.com",
-         from: @contact.email,
+    mail(to: ENV['GMAIL_ADDRESS'],
          subject: "Contact Form", 
          message: @contact.message)
+  end
+
+  def contact_response(contact)
+    @contact = contact
+    mail(to: @contact.email, 
+         subject: "Contact Form -- Greetings")
   end
 end
