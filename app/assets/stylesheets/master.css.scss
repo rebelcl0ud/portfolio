@@ -208,3 +208,12 @@ figure.effect-honey:hover h2 small {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+
+@media (max-width:600px) {
+  .frosty {
+    text-align: left;
+    padding-left: 60px;
+  }
+}
+
