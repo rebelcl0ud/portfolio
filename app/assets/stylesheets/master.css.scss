@@ -39,7 +39,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
   height: 50px;
 }
 
-
 .projects {
   padding: 75px 25px 25px 25px;
 }
@@ -99,7 +98,6 @@ h3:hover, h4:hover  {
 }
 .col-centered {
     float:none;
-
     margin:0;
 }
 
@@ -142,6 +140,32 @@ h3:hover, h4:hover  {
    text-decoration: none;
 
 }
+
+.about {
+  background-color: rgba(0, 191, 255, 0.5);
+  padding: 15px;  
+}
+
+
+
+.about-summary {
+  background-color: rgba(0, 191, 255, 0.5);
+  padding: 60px 40px; 
+  border-radius: 30% 28% 20% 0%;
+  border: 2px solid #00bfff;
+}
+
+.about-me {
+  height: auto;
+  width: auto;
+  height: 300px;
+  width: 200px;
+  border-radius: 45%;
+  margin: 10px;
+  background-color: rgba(0, 191, 255, 0.5);
+  border: 1px solid #00bfff;
+}
+
 
 /*---------------*/
 /***** Honey *****/
@@ -214,6 +238,12 @@ figure.effect-honey:hover h2 small {
   .frosty {
     text-align: left;
     padding-left: 60px;
+  }
+}
+
+@media (max-width:400px) {
+ .about-me {
+    display: none;
   }
 }
 
