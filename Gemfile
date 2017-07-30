@@ -53,3 +53,5 @@ gem 'simple_form', '>= 3.1'
 
 gem 'figaro', '>=1.0.0'
 
+gem 'font-awesome-sass', '~> 4.7.0'
+
