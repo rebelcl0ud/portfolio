@@ -154,9 +154,11 @@ h3, h4, small {
 
 .social-button:hover {
   transform: scale(1.02);
+}
 
 .about {
   background-color: rgba(0, 191, 255, 0.5);
+  border: 1px solid #00bfff;
   padding: 25px;  
 }
 
@@ -176,7 +178,7 @@ h3, h4, small {
 /*---------------*/
 
 figure.effect-honey {
-  background: #0078a3; /* <<< sky blue >>> */
+  background: #00bfff; /* <<< sky blue >>> */
 }
 
 figure.effect-honey img {
