@@ -5,6 +5,19 @@
   width: device-width;
 }
 
+@media (max-width:600px) {
+  .frosty {
+    text-align: left;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width:400px) {
+ .about-me {
+    display: none;
+  }
+}
+
 body {
   position: relative;
 }
@@ -14,7 +27,7 @@ body {
 }
 
 .hero {
-  background: url('bg.jpg') no-repeat center center fixed;
+  background: url('bg2.jpg') no-repeat center center fixed;
    -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -58,6 +71,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
   padding-right: 115px;
 }
 
+.btn {
+  border: 1px solid white;
+}
+
 .frosty h4, #subheader{
   text-decoration: none;
   display: inline-block;
@@ -72,10 +89,6 @@ h3, h4, small {
   font-family: 'Source Code Pro', monospace;
 }
 
-h3:hover, h4:hover  {
-  text-decoration: underline dotted #00bfff;
-
-}
 
 .hashtag {
   color: #00bfff;
@@ -86,8 +99,9 @@ h3:hover, h4:hover  {
   text-align: center;
 }
 
-#splurty, #nomster, #flixter, #chess, #telefunke, #meep {
-  padding-bottom: 5px;
+#comp, #splurty, #nomster, #flixter, #grammable, #chess, #meep, 
+#quotemachine, #weather, #twitch, #calculator {
+  padding-bottom: 15px;
 }
 
 
@@ -129,10 +143,8 @@ h3:hover, h4:hover  {
     border-radius: 0 5px 5px 0;
     letter-spacing: -0.5px;
     font-size: 16px;
-    box-shadow: 0 0 5px rgba(0, 0, 1, 0.21);
-    
-   
-  }
+    box-shadow: 0 0 5px rgba(0, 0, 1, 0.21);  
+}
 
 .scrollToTop:hover {
    color: #00bfff;
@@ -164,7 +176,7 @@ h3:hover, h4:hover  {
 /*---------------*/
 
 figure.effect-honey {
-  background: #00bfff; /* <<< sky blue >>> */
+  background: #0078a3; /* <<< sky blue >>> */
 }
 
 figure.effect-honey img {
@@ -174,7 +186,7 @@ figure.effect-honey img {
 }
 
 figure.effect-honey:hover img {
-  opacity: 0.2; /* <<< AFTER hover >>> */
+  opacity: 0.5; /* <<< AFTER hover >>> */
 }
 
 figure.effect-honey figcaption::before {
@@ -185,8 +197,6 @@ figure.effect-honey figcaption::before {
   height: 10px;
   background: #fff; /* <<< bottom strip >>> */
   content: '';
-  -webkit-transform: translate3d(0,10px,0);
-  transform: translate3d(0,10px,0);
 }
 
 figure.effect-honey h2 {
@@ -197,8 +207,6 @@ figure.effect-honey h2 {
   width: 100%;
   text-align: left;
   color: white;
-  -webkit-transform: translate3d(0,-30px,0);
-  transform: translate3d(0,-30px,0);
 }
 
 figure.effect-honey h2 small {
@@ -224,18 +232,3 @@ figure.effect-honey:hover h2 small {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
-
-
-@media (max-width:600px) {
-  .frosty {
-    text-align: left;
-    padding-left: 60px;
-  }
-}
-
-@media (max-width:400px) {
- .about-me {
-    display: none;
-  }
-}
-
