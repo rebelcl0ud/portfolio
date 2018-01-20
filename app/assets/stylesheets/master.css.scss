@@ -127,31 +127,6 @@ h3, h4, small {
   background: #fff;
 }
 
-.scrollToTop {
-    width: 100px;
-    height: 70px;
-    padding: 26px;
-    text-align: center;
-    background: rgba(50, 50, 50, 0.9);
-    font-weight: 300;
-    color: #fff;
-    text-decoration: none;
-    position: fixed;
-    bottom: 100px;
-    left: 0px;
-    display: none;
-    border-radius: 0 5px 5px 0;
-    letter-spacing: -0.5px;
-    font-size: 16px;
-    box-shadow: 0 0 5px rgba(0, 0, 1, 0.21);  
-}
-
-.scrollToTop:hover {
-   color: #00bfff;
-   text-decoration: none;
-
-}
-
 .social-button:hover {
   transform: scale(1.02);
 }
