@@ -20,20 +20,11 @@
 
 body {
   position: relative;
+  margin: 0px;
 }
 
 .navbar {
   border-radius: 0px;
-}
-
-.hero {
-  background: url('bg2.jpg') no-repeat center center fixed;
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 450px;
-  box-shadow: 0px 3px 8px #2a2a2a;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -51,19 +42,43 @@ h1, h2, h3, h4, h5, h6, .navbar {
   height: 50px;
 }
 
-.projects {
-  padding: 75px 25px 25px 25px;
+.boom-box {
+  margin-top:30px;
+  margin-bottom:15px;
+  padding: 25px;
+  box-shadow: 0px 1px 4px #2a2a2a;
+  color: gray;
+  background: #fff;
+}
+
+.about {
+  padding: 82px 25px 50px 25px; 
+  height: auto;
+}
+
+.about-me {
+  height: auto;
+  width: auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 15px;
+  background-color: rgba(0, 191, 255, 0.5);
+  border: 1px solid #00bfff;
+}
+
+.about-pic {
+  padding-top: 32px;
 }
 
 #contact-button { 
   font-family: 'Source Code Pro', monospace;
   color: white;
-  padding-top: 25px;
-  padding-right: 115px;
+  padding-top: 18px;  
 }
 
-.btn {
-  border: 1px solid white;
+.projects {
+  padding: 50px 25px 25px 25px;
 }
 
 h3, h4, small {
@@ -84,7 +99,6 @@ h3, h4, small {
   height: auto;
 }
 
-
 .hashtag {
   color: #00bfff;
   display: inline-block;
@@ -94,11 +108,9 @@ h3, h4, small {
   text-align: center;
 }
 
-#comp, #splurty, #nomster, #flixter, #grammable, #chess, #meep, 
-#quotemachine, #weather, #twitch, #calculator {
+#comp, #chess, #meep, #quotemachine, #weather, #wiki, #twitch, #calculator {
   padding-bottom: 15px;
 }
-
 
 /* centered columns styles */
 .row-centered {
@@ -113,34 +125,8 @@ h3, h4, small {
   clear: both;
 }
 
-.boom-box {
-  margin-top:30px;
-  margin-bottom:15px;
-  padding: 25px;
-  box-shadow: 0px 2px 4px #2a2a2a;
-  color: gray;
-  background: #fff;
-}
-
-.social-button:hover {
+.social-button:hover, .btn:hover{
   transform: scale(1.02);
-}
-
-.about {
-  background-color: rgba(0, 191, 255, 0.5);
-  border: 1px solid #00bfff;
-  padding: 25px 25px 50px 25px;  
-}
-
-.about-me {
-  height: auto;
-  width: auto;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  margin: 15px;
-  background-color: rgba(0, 191, 255, 0.5);
-  border: 1px solid #00bfff;
 }
 
 /*---------------*/
