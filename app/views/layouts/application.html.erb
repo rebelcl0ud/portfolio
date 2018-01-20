@@ -32,7 +32,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#projects-scroll">Projects</a></li>
             <li><a href="#about-scroll">Me</a></li>
-            <li><a href="#social-scroll">Social</a></li>
+            <!--li><a href="#social-scroll">Social</a></li-->
             <li><a href="#contact-scroll">Contact</a></li>
             <li><a href="https://rebelcl0ud.github.io/blog/">Blog</a></li>
           </ul>
@@ -48,7 +48,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Contact Me</h4>
+        <h4 class="modal-title" id="myModalLabel">Say Hi</h4>
       </div>
       <%= simple_form_for Contact.new do |f| %>
       <div class="modal-body">
@@ -76,8 +76,7 @@
       
       <small> © 2017 Jovanka Placeres. All Rights Reserved.</small>
       <br />
-      <small> Laptop/Notebook photo <a href="https://unsplash.com/@albertosaure?photo=6cOUbEdwG24">Unsplash</a></small>
-     
+      <div id="subheader"> web development fueled by <%= image_tag 'soda.png', class: 'social-button', id: 'soda' %></div>  
     </div>
   </div>
 
