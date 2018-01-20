@@ -55,15 +55,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
   padding: 75px 25px 25px 25px;
 }
 
-.frosty { 
-  font-family: 'Source Code Pro', monospace;
-  text-shadow: rgba(0,0,0,0.95) 2px 2px;
-  color: white;
-  margin-top: 75px;
-  padding-right: 115px;
-}
-
-
 #contact-button { 
   font-family: 'Source Code Pro', monospace;
   color: white;
@@ -75,18 +66,22 @@ h1, h2, h3, h4, h5, h6, .navbar {
   border: 1px solid white;
 }
 
-.frosty h4, #subheader{
+h3, h4, small {
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#subheader {
+  font-family: 'Source Code Pro', monospace;
   text-decoration: none;
   display: inline-block;
+  color: #00bfff;
 }
 
 #soda {
   -webkit-filter: invert(100%);
-}
-
-h3, h4, small {
-  text-align: center;
-  font-family: 'Source Code Pro', monospace;
+  width: 10%;
+  height: auto;
 }
 
 
