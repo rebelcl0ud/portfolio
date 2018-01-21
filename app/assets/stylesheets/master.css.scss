@@ -13,8 +13,12 @@
 }
 
 @media (max-width:400px) {
- .about-me {
+  .navbar-brand {
     display: none;
+  }
+  
+  #joIcon {
+    margin-left: 20px;
   }
 }
 
@@ -125,68 +129,23 @@ h3, h4, small {
   clear: both;
 }
 
-.social-button:hover, .btn:hover{
+.social-button:hover, .btn:hover {
   transform: scale(1.02);
 }
 
-/*---------------*/
-/***** Honey *****/
-/*---------------*/
-
-figure.effect-honey {
-  background: #00bfff; /* <<< sky blue >>> */
+figcaption {
+  text-align: center;
 }
 
-figure.effect-honey img {
-  opacity: 1; /* <<< as is BEFORE hover (no overlay @1) >>> */
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
+.fa-external-link {
+  padding-right: 25px;
 }
 
-figure.effect-honey:hover img {
-  opacity: 0.5; /* <<< AFTER hover >>> */
+.fa-external-link, .fa-github-alt {
+  color: #00bfff;
 }
 
-figure.effect-honey figcaption::before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background: #fff; /* <<< bottom strip >>> */
-  content: '';
+.fa-external-link:hover, .fa-github-alt:hover {
+  transform: scale(1.2);
 }
 
-figure.effect-honey h2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 1em 1.5em;
-  width: 100%;
-  text-align: left;
-  color: white;
-}
-
-figure.effect-honey h2 small {
-  font-style: normal;
-  opacity: 0;
-  color: white;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,-30px,0);
-  transform: translate3d(0,-30px,0);
-}
-
-figure.effect-honey figcaption::before,
-figure.effect-honey h2 {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-}
-
-figure.effect-honey:hover figcaption::before,
-figure.effect-honey:hover h2,
-figure.effect-honey:hover h2 small {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
