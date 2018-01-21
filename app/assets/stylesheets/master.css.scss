@@ -13,8 +13,12 @@
 }
 
 @media (max-width:400px) {
- .about-me {
+  .navbar-brand {
     display: none;
+  }
+  
+  #joIcon {
+    margin-left: 20px;
   }
 }
 
