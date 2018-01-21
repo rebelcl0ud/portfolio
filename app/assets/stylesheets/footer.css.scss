@@ -26,6 +26,13 @@ body {
   padding: 20px 0px 20px 0px;
 }
 
-#footer a {
-  color: white;
+#memo {
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#soda {
+  -webkit-filter: invert(100%);
+  width: 7%;
 }

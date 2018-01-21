@@ -90,19 +90,6 @@ h3, h4, small {
   font-family: 'Source Code Pro', monospace;
 }
 
-#subheader {
-  font-family: 'Source Code Pro', monospace;
-  text-decoration: none;
-  display: inline-block;
-  color: #00bfff;
-}
-
-#soda {
-  -webkit-filter: invert(100%);
-  width: 10%;
-  height: auto;
-}
-
 .hashtag {
   color: #00bfff;
   display: inline-block;
@@ -148,4 +135,3 @@ figcaption {
 .fa-external-link:hover, .fa-github-alt:hover {
   transform: scale(1.2);
 }
-
