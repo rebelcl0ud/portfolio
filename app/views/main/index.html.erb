@@ -1,13 +1,14 @@
 <!-- TOP SECTION -->
-   <!-- ALERT MESSAGE [put in this section so it overlays pic instead of offset page]-->
-    <% if flash[:notice] %>
-      <div class="text-center alert alert-success">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <%= flash[:notice].html_safe unless flash[:notice].blank? %>
-      </div>
-    <% end %>
+<br /><br /><br />
+<!-- ALERT MESSAGE [put in this section so it overlays pic instead of offset page]-->
+<% if flash[:notice] %>
+  <div class="text-center alert alert-success">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <%= flash[:notice].html_safe unless flash[:notice].blank? %>
+  </div>
+<% end %>
 
-    <!-- ABOUT SECTION [in PROGRESS] -->
+<!-- ABOUT SECTION [in PROGRESS] -->
 <%= render 'main/about' %>
 <br class="clr" /> <!--projects starts fresh -->
 
