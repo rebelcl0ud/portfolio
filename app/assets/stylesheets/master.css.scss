@@ -20,6 +20,11 @@
   #joIcon {
     margin-left: 20px;
   }
+
+  .social-button {
+    width: 4.5em;
+    height: 4.5em;
+  }
 }
 
 body {
@@ -35,7 +40,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
   margin:0;
 }
 
-.navbar, .navbar-brand {
+.navbar, 
+.navbar-brand {
   font-family: 'Advent Pro', sans-serif;
   font-size: 20px;
 }
@@ -47,38 +53,39 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .boom-box {
-  margin-top:30px;
-  margin-bottom:15px;
   padding: 25px;
   box-shadow: 0px 1px 4px #2a2a2a;
   color: gray;
   background: #fff;
+  border-radius: .2em;
 }
 
 .about {
-  padding: 82px 25px 50px 25px; 
+  padding: 32px 25px 50px 25px; 
   height: auto;
 }
 
 .about-me {
   height: auto;
   width: auto;
-  height: 200px;
-  width: 200px;
+  height: 15em;
+  width: 15em;
   border-radius: 50%;
-  margin: 15px;
   background-color: rgba(0, 191, 255, 0.5);
-  border: 1px solid #00bfff;
+  border: 1px solid gray;;
 }
 
 .about-pic {
-  padding-top: 32px;
+  margin-bottom: 10px;
+}
+
+.about-summary {
+  color: gray;
 }
 
 #contact-button { 
   font-family: 'Source Code Pro', monospace;
   color: white;
-  padding-top: 18px;  
 }
 
 .projects {
@@ -99,8 +106,17 @@ h3, h4, small {
   text-align: center;
 }
 
-#comp, #quotemachine, #weather, #wiki, #twitch, #calculator {
+#comp, 
+#quotemachine, 
+#weather, 
+#wiki, 
+#twitch, 
+#calculator {
   padding-bottom: 15px;
+  -webkit-transition: all 2s ease; 
+  -moz-transition: all 2s ease; 
+  -ms-transition: all 2s ease; 
+  transition: all 2s ease;
 }
 
 /* centered columns styles */
@@ -116,8 +132,9 @@ h3, h4, small {
   clear: both;
 }
 
-.social-button:hover, .btn:hover {
-  transform: scale(1.02);
+.social-button:hover, 
+.btn:hover {
+  transform: scale(1.05);
 }
 
 figcaption {
@@ -128,10 +145,12 @@ figcaption {
   padding-right: 25px;
 }
 
-.fa-external-link, .fa-github-alt {
+.fa-external-link, 
+.fa-github-alt {
   color: #00bfff;
 }
 
-.fa-external-link:hover, .fa-github-alt:hover {
+.fa-external-link:hover, 
+.fa-github-alt:hover {
   transform: scale(1.2);
 }

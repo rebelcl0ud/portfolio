@@ -1,21 +1,23 @@
 <!-- adjusted css, layout for pic/ text as screen minimizes is good now, just gotta finish bio -->
-<div class="about" id="about-scroll">
-  <div class="container" id="about-section">
-    <div class="row row-centered">
-      <div class="about-pic col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4">
-        <%=image_tag 'me.png', class: 'about-me' %>
-        <div class="col-xs-12 text-center" id="contact-button">
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-            Say Hi!
-          </button>
-        </div>
-      </div>
-      <br />
-       <div class="boom-box about-summary text-left col-xs-12 col-sm-6 col-md-5">
-          <i class="fa fa-quote-left fa-2x fa-pull-left" aria-hidden="true"></i>Word on the street is people like to know the person behind the page... *waves* hi<br /><br />
-          Currently on a frontend level up quest. My background is in compositing which combines tech, art, and troubleshooting to create something new-- probably why I find frontend a perfect fit.<br /><br />When I'm not creating awesome beautiful mistakes to learn from my attention goes to my "little girl" (an amazing 11 yr old Lab mix), she's the best.<br /><br />Integration of APIs, JavaScript, jQuery, HTML, CSS/SCSS, and (recently) Pug have been used on recent work.<br /><br /> 
-      </div>    
+<div class="about col-md-8 col-md-offset-2" id="about-scroll">
+  <!--div class="boom-box col-md-12"-->
+    <div class="about-pic col-md-6">
+      <%=image_tag 'me.png', class: 'about-me' %>
+      <br /><br />
+        <a href="https://github.com/rebelcl0ud/"><%= image_tag 'github.svg', class: 'social-button' %></a>
+        <a href="https://www.linkedin.com/in/jovankaplaceres"><%= image_tag 'linkedin.svg', class: 'social-button' %></a>
+        <a href="https://twitter.com/mysticalstate"><%= image_tag 'twitter.svg', class: 'social-button' %></a>   
+    </div><!-- about-pic section -->
+    <br />
+    <div class="about-summary col-md-6">
+      <i class="fa fa-quote-left fa-2x fa-pull-left" aria-hidden="true"></i>Word on the street is people like to know the person behind the page... *waves* hi<br /><br />
+      Currently on a frontend level up quest. My background is in compositing which combines tech, art, and troubleshooting to create something new-- probably why I dig frontend.<br /><br />When I'm not creating awesome/ beautiful mistakes to learn from my attention goes to my "little girl" (an amazing 12 yr old Lab mix), she's the best.<br /><br />APIs, JavaScript, jQuery, HTML, CSS/SCSS.<br /><br />
+    </div><!-- about-summary --> 
+    <div class="text-right" id="contact-button">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+        Say Hi!
+      </button>
     </div>
-  </div>
-</div>
+  <!--/div--><!-- boombox -->  
+</div><!-- about section --> 
