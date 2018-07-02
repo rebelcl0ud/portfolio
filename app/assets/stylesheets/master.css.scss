@@ -28,6 +28,10 @@
 }
 
 body {
+  /* https://css-tricks.com/css3-gradients/ */
+  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,  #00bfff, #EC6EAD);
+  background: linear-gradient(to right,  #00bfff, #EC6EAD);
   position: relative;
   margin: 0px;
 }
@@ -80,7 +84,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .about-summary {
-  color: gray;
+  color: #e5e5e5;
 }
 
 #contact-button { 
@@ -89,17 +93,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .projects {
+  background: url(paper_fibers.png);
   padding: 50px 25px 25px 25px;
 }
 
 h3, h4, small {
   text-align: center;
   font-family: 'Source Code Pro', monospace;
-}
-
-.hashtag {
-  color: #00bfff;
-  display: inline-block;
 }
 
 .portfolio-caption {
