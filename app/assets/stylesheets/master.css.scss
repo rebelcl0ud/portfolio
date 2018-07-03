@@ -10,17 +10,17 @@
     text-align: left;
     padding-left: 60px;
   }
-}
 
-@media (max-width:400px) {
   .navbar-brand {
     display: none;
   }
-  
+
   #joIcon {
     margin-left: 20px;
   }
+}
 
+@media (max-width:400px) { 
   .social-button {
     width: 4.5em;
     height: 4.5em;
