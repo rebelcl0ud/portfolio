@@ -40,8 +40,12 @@ body {
   border-radius: 0px;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar {
+h1, .navbar {
   margin:0;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 .navbar, 
@@ -75,7 +79,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
   height: 15em;
   width: 15em;
   border-radius: 50%;
-  background-color: rgba(0, 191, 255, 0.5);
   border: 1px solid gray;;
 }
 
@@ -97,7 +100,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
   padding: 50px 25px 25px 25px;
 }
 
-h3, h4, small {
+h1,
+small {
   text-align: center;
   font-family: 'Source Code Pro', monospace;
 }
