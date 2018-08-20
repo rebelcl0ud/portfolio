@@ -105,8 +105,8 @@ h1 {
 
 .colorOverlay {
   background: rgba(0,0,0,0.8);
-  text-align: center;
-  padding: 15% 0 25% 0;
+  text-align: left;
+  padding: 10% 10% 25% 10%;
   height: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.25s ease;
@@ -159,9 +159,17 @@ h1 {
 }
 
 h1,
-small {
+small,
+p,
+.user-stories {
   font-family: $mono-space;
 }
+
+p,
+.user-stories {
+  color: #808080;
+}
+
 
 .clr {
   clear: both;
