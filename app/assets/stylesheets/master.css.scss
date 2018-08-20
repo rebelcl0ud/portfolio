@@ -2,23 +2,38 @@
 @import "bootstrap";
 /* above moved from app file -- .navbar border radius was not working until this edit*/
 
-/* vars */
-$bg-col: #3494E6;
-$bg-size: cover;
-$mono-space: 'Source Code Pro', monospace;
-$nav-font: 'Advent Pro', sans-serif;
-
 /* mobile */
 @-ms-viewport{
   width: device-width;
 }
 
-@media (max-width:600px) {
-  .frosty {
-    text-align: left;
-    padding-left: 60px;
+@media (min-width:800px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
   }
 
+  .weather {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .newsletter {
+    grid-column: 3;
+  }
+
+  .calculator {
+    grid-column: 3;
+  }
+
+  .wiki {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+}
+
+@media (max-width:600px) {
   .navbar-brand {
     display: none;
   }
@@ -28,12 +43,24 @@ $nav-font: 'Advent Pro', sans-serif;
   }
 }
 
-@media (max-width:400px) { 
+@media (max-width:400px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
   .social-button {
     width: 4.5em;
     height: 4.5em;
   }
 }
+
+/* vars */
+$bg-col: #3494E6;
+$bg-size: cover;
+$mono-space: 'Source Code Pro', monospace;
+$nav-font: 'Advent Pro', sans-serif;
 
 body {
   /* https://css-tricks.com/css3-gradients/ */
@@ -97,12 +124,6 @@ h1 {
 }
 
 /* projects */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-}
-
 .colorOverlay {
   background: rgba(0,0,0,0.8);
   text-align: left;
@@ -123,27 +144,21 @@ h1 {
 }
 
 .weather {
-  grid-column: 1/3;
-  grid-row: 1/3;
   background: url('weather.png'); 
   background-size: $bg-size;
 }
 
 .newsletter {
-  grid-column: 3;
   background: url('newsletter.png'); 
   background-size: $bg-size;
 }
 
 .calculator {
-  grid-column: 3;
   background: url('calculator.png'); 
   background-size: $bg-size;
 }
 
 .wiki {
-  grid-column: 1;
-  grid-row: 3/4;
   background: url('wiki.png'); 
   background-size: $bg-size;
 }
@@ -169,7 +184,6 @@ p,
 .user-stories {
   color: #808080;
 }
-
 
 .clr {
   clear: both;
