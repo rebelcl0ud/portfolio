@@ -1,1 +1,1 @@
-Personal Portfolio built using Rails + Bootstrap
+Personal Portfolio built using Rails + Bootstrap + jQuery
