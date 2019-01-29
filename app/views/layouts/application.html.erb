@@ -44,38 +44,37 @@
     <%= yield %>
   </div>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Say Hi</h4>
-      </div>
-      <%= simple_form_for Contact.new do |f| %>
-      <div class="modal-body">
-        <%= f.input :name %>
-        <br />
-        <%= f.input :email %>
-        <br />
-        <%= f.input :message %>
-        <br />
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <%= f.button :submit,"Send!", class: 'btn btn-info' %>
-      <% end %>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Say Hi</h4>
+        </div>
+        <%= simple_form_for Contact.new do |f| %>
+        <div class="modal-body">
+          <%= f.input :name %>
+          <br />
+          <%= f.input :email %>
+          <br />
+          <%= f.input :message %>
+          <br />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <%= f.button :submit,"Send!", class: 'btn btn-info' %>
+        <% end %>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <br class="clr" /> <!--makes certain footer starts fresh -->
-  <br /><br /><br /><br /><br />
   
   <div id="footer">
     <div class="container"> 
-      <small> ©2017-2018. All Rights Reserved.</small>
+      <small> ©2017-2019. All Rights Reserved.</small>
       <br />
       <div id="memo"> made with <%= image_tag 'soda.png', id: 'soda' %> & my little girl <i class="fa fa-paw fa-lg" id="paw" aria-hidden="true"></i></div>  
     </div>
