@@ -105,6 +105,8 @@ h1 {
 .about-me {
   height: auto;
   width: 15em;
+  border-bottom: 1px solid transparent;
+  border-radius: 0 0 50% 50%;
 }
 
 .about-pic {
