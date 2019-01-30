@@ -43,13 +43,24 @@
   }
 }
 
-@media (max-width:400px) {
+@media (min-width:320px) and (max-width:400px) {
   .projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(100px, auto);
   }
 
+  .nav-social {
+    display: inline-block;
+    margin: 0 !important;
+      #social-github,
+      #social-linkedin {
+      width: 13%;
+      height: 100%;
+      margin: 0 2px;
+    }
+  }
+  
   .social-button {
     width: 4.5em;
     height: 4.5em;
@@ -102,6 +113,7 @@ h1 {
     #social-github,
     #social-linkedin {
     width: 13%;
+    height: 100%;
     margin: 0 2px;
   }
 }
