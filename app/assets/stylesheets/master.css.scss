@@ -21,7 +21,7 @@
 
   #contact-button {
     button {
-      margin-top: 75px;
+      margin-top: 25px;
       margin-right: 25px;
     }
   }
@@ -96,6 +96,18 @@ h1 {
   height: 50px;
 }
 
+.nav-social {
+  display: inline-block;
+  margin: 0 15px;
+    #social-github,
+    #social-linkedin {
+    width: 13%;
+    margin: 0 2px;
+  }
+}
+
+
+
 /* about */
 .about {
   padding: 120px 25px;
@@ -112,11 +124,6 @@ h1 {
 .about-pic {
   margin-top: 25px;
   text-align: center;
-}
-
-.socials {
-  text-align: center;
-  margin-top: 45px;
 }
 
 .about-summary {
