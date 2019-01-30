@@ -147,7 +147,7 @@ h1 {
 }
 
 .salary:hover .colorOverlay,
-.weather:hover .colorOverlay,
+.tinytree:hover .colorOverlay,
 .comp:hover .colorOverlay {
   opacity: 1;
 }
@@ -157,9 +157,9 @@ h1 {
   background-size: $bg-size;
 }
 
-.weather {
-  background: url('weather.png'); 
-  background-size: $bg-size;
+.tinytree {
+  background: rgba(0,0,0,0.8);
+  padding: 10% 10% 25% 10%;
 }
 
 .comp {
