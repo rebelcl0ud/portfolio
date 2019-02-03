@@ -118,8 +118,6 @@ h1 {
   }
 }
 
-
-
 /* about */
 .about {
   padding: 120px 25px;
@@ -145,39 +143,60 @@ h1 {
 #contact-button { 
   font-family: $mono-space;
   color: white;
+
+  .btn.btn-info {
+    background: #00bfff;
+    border: 1px solid #00bfff;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background: #00bfff;
+      border: 1px solid #00bfff;
+      transform: scale(1.05);
+    }
+  }
 }
 
 /* projects */
+
+  
 .colorOverlay {
   background: rgba(0,0,0,0.8);
   text-align: left;
   padding: 10% 10% 25% 10%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: opacity 0.25s ease;
-  -moz-transition: opacity 0.25s ease;  
-}
-
-.salary:hover .colorOverlay,
-.tinytree:hover .colorOverlay,
-.comp:hover .colorOverlay {
-  opacity: 1;
-}
-
-.salary {
-  background: url('salary.png'); 
-  background-size: $bg-size;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;  
 }
 
 .tinytree {
   background: rgba(0,0,0,0.8);
   padding: 10% 10% 25% 10%;
+
+  &:hover .colorOverlay {
+    opacity: 1;
+  }
+}
+
+.salary {
+  background: url('salary.png'); 
+  background-size: $bg-size; 
+
+  &:hover .colorOverlay  {
+    opacity: 1;
+  }
 }
 
 .comp {
   background: url('comp.png'); 
   background-size: $bg-size;
+
+  &:hover .colorOverlay {
+    opacity: 1;
+  }
 }
+
 
 h1 {
   text-transform: capitalize;
@@ -199,9 +218,13 @@ p,
   clear: both;
 }
 
-.social-button:hover, 
-.btn:hover {
-  transform: scale(1.05);
+.social-button {
+  transition: all .5s ease-in-out;
+  border-radius: 50%;
+  &:hover {
+    transform: scale(1.02);
+    background: #EC6EAD;
+  }
 }
 
 .fa-external-link {
@@ -211,16 +234,28 @@ p,
 .fa-external-link, 
 .fa-github-alt {
   color: #00bfff;
-}
+  transition: all .5s ease-in-out;
 
-.fa-external-link:hover, 
-.fa-github-alt:hover {
-  transform: scale(1.2);
+  &:hover {
+    transform: scale(1.08);
+  }
 }
 
 /* CONTACT */
 .contact {
   padding: 120px 25px;
+
+  input.btn.btn-info {
+    background: #EC6EAD;
+    border: 1px solid #EC6EAD;
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+      background: #EC6EAD;
+      border: 1px solid #EC6EAD;
+      transform: scale(1.05);
+    }
+  }
 }
 
 
