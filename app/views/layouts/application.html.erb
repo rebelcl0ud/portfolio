@@ -46,30 +46,7 @@
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Say Hi</h4>
-        </div>
-        <%= simple_form_for Contact.new do |f| %>
-        <div class="modal-body">
-          <%= f.input :name %>
-          <br />
-          <%= f.input :email %>
-          <br />
-          <%= f.input :message %>
-          <br />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <%= f.button :submit,"Send!", class: 'btn btn-info' %>
-        <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <br class="clr" /> <!--makes certain footer starts fresh -->
   
